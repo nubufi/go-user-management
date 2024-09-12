@@ -44,12 +44,12 @@ go-user-management/
 - Docker compose or PostgreSQL
 
 ## Setup Instructions
-# 1. Clone the repository
+### 1. Clone the repository
 ```bash
 git clone https://github.com/nubufi/go-user-management.git
 cd go-user-management
 ```
-# 2. Environment Variables
+### 2. Environment Variables
 You can configure the environment variables in .env file:
 ```
 DB_HOST= localhost
@@ -60,19 +60,19 @@ DB_NAME= usermanagement
 HTTP_PORT= 8080
 ```
 
-# 3. Deploying PostgreSQL(optional)
+### 3. Deploying PostgreSQL(optional)
 If you don't have any postgresql server you can deploy it by running the following command
 ```bash
 docker-compose up --build
 ```
 
-# 4. Running The Application
+### 4. Running The Application
 ```bash
 go run cmd/main.go
 ```
 
 ## API Endpoints
-# 1. Create a User
+### 1. Create a User
 **POST /users**
 
 **Request Body (JSON):**
@@ -94,7 +94,7 @@ go run cmd/main.go
 }
 ```
 
-# 2. Get User by ID
+### 2. Get User by ID
 **GET /users/:id**
 
 **Response (200 OK):**
@@ -108,7 +108,7 @@ go run cmd/main.go
 }
 ```
 
-# 3. Update User by ID
+### 3. Update User by ID
 **PUT /users/:id**
 
 **Request Body (JSON):**
@@ -132,7 +132,7 @@ go run cmd/main.go
 }
 ```
 
-# 4. Delete User by ID
+### 4. Delete User by ID
 **DELETE /users/:id**
 
 **Response (200 OK):**
@@ -149,12 +149,12 @@ The application logs the time taken for each request using goroutines and channe
 ## Testing
 This project includes unit tests for both the repository and controller layers. Tests are structured into different directories under the tests/ folder.
 
-# 1. Run All Tests
+### 1. Run All Tests
 ```bash
 go test ./... -v
 ```
 
-# 2. Running Specific Tests
+### 2. Running Specific Tests
 - **Repository Tests:**
 ```bash
 go test ./tests/repository_tests/ -v
