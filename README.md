@@ -61,9 +61,9 @@ HTTP_PORT= 8080
 ```
 
 # 3. Deploying PostgreSQL(optional)
-If you don't have any postgresql server you can deploy it by running 
+If you don't have any postgresql server you can deploy it by running the following command
 ```bash
-docker-compose up --build command
+docker-compose up --build
 ```
 
 # 4. Running The Application
